@@ -1,9 +1,9 @@
 # Breakout
 This breakout application is a self-study project for basic 2D game development.<br>
-It implements the basic features of the original breakout game (see <a href="https://en.wikipedia.org/wiki/Breakout_(video_game)">wikipedia.org</a>)<br>
+It implements the basic features of the original breakout game (see <a href="https://en.wikipedia.org/wiki/Breakout_(video_game)">wikipedia.org</a>).<br>
 <br>
 The classes of the game engine package were coded with a great tutorial from <a href="https://github.com/ClickerMonkey/gameprogblog">ClickerMonkey</a>.
-Visit his account to see the full tutorial.
+Visit his account to see the full tutorial. All ui classes uses java2D.
 <br><br>
 This application let you play breakout. The target of the game is to destroy all bricks on the screen.
 The game is finished, if the ball hits the bottom border of the screen.
@@ -12,4 +12,7 @@ The /res directory contains level resource files. Each level loads his bricks by
 The levelmanager reads the rgb-values of each pixel and creates the bricks of each level. The color
 influences for the fill-color and the lifepoints of a brick.
 <br>
-<img src="https://github.com/jaunerc/Breakout/tree/master/img/breakout_window.png" />
+<br>
+In the /jar directory is a executable jar-file and a copy of the level files. This application was tested with Java 1.8.
+<br>
+<img src="https://github.com/jaunerc/Breakout/blob/master/img/breakout_window.PNG" />
