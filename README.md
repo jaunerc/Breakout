@@ -11,3 +11,5 @@ The game is finished, if the ball hits the bottom border of the screen.
 The /res directory contains level resource files. Each level loads his bricks by a image file.
 The levelmanager reads the rgb-values of each pixel and creates the bricks of each level. The color
 influences for the fill-color and the lifepoints of a brick.
+<br>
+<img src="https://github.com/jaunerc/Breakout/tree/master/img/breakout_window.png" />
