@@ -90,16 +90,11 @@ public class BreakoutFrame extends JFrame {
      * Starts breakout in a new thread.
      */
     public void startBreakout() {
-        Thread t = new Thread(new Runnable() {
-
-            @Override
-            public void run() {
-                controlPanel.setState(STATE_RUNNING);
-                screen.start();
-                controlPanel.setState(STATE_GAMEOVER);
-            }
-        });
-        t.start();
+        new Thread(() -> {
+            controlPanel.setState(STATE_RUNNING);
+            screen.start();
+            controlPanel.setState(STATE_GAMEOVER);
+        }).start();
     }
     
     /**

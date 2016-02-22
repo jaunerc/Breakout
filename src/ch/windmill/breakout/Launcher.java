@@ -1,7 +1,7 @@
 /*
  * The MIT License
  *
- * Copyright 2016 jaunerc.
+ * Copyright 2016 Cyrill Jauner.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -23,35 +23,20 @@
  */
 package ch.windmill.breakout;
 
-import ch.windmill.breakout.control.Breakout;
 import ch.windmill.breakout.view.BreakoutFrame;
-import ch.windmill.breakout.view.BreakoutScreen;
-import ch.windmill.engine.GameState;
-import ch.windmill.engine.InterpolatedLoop;
-import java.awt.Color;
-import java.util.concurrent.TimeUnit;
 
 /**
- *
- * @author jaunerc
+ * The launcher to start the breakout application.
+ * @author Cyrill Jauner
  */
 public class Launcher {
     
-    private static int WIDTH = 600;
-    private static int HEIGHT = 600;
+    private static final int WIDTH = 600;
+    private static final int HEIGHT = 600;
     
     public static void main(String[] args) {
-        /**Breakout breakout = new Breakout(600, 500);
-        GameState state = new GameState();
-        InterpolatedLoop loop = new InterpolatedLoop(3, 20, TimeUnit.MILLISECONDS);
-        BreakoutScreen screen = new BreakoutScreen(breakout, state, loop, 600, 500);
-        screen.setBackground(Color.white);*/
         BreakoutFrame frame = new BreakoutFrame(WIDTH, HEIGHT);
         
-        //frame.add(screen);
-        //frame.pack();
         frame.setVisible(true);
-        //screen.start();
-        //frame.startBreakout();
     }
 }

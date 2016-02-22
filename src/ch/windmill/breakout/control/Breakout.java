@@ -33,7 +33,7 @@ import ch.windmill.engine.input.GameInput;
 import java.awt.Graphics2D;
 
 /**
- *
+ * This class provides the game class for breakout.
  * @author Cyrill Jauner
  */
 public class Breakout implements Game {
